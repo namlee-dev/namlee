@@ -1,0 +1,191 @@
+/* STEP Commonn properties */
+
+:root {
+    --spacing   : 1rem;
+    --color1    : #1d3557;
+    --color2    : #457b9d;
+    --color3    : #a8dadc;
+    --color4    : #f1faee;
+    --color5    : #ec9a9a;
+    --color6    : #e63946;
+}
+
+/* STEP General */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: var(--color1);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+footer ul li, header ul li {
+    display: inline-block;
+}
+
+a {
+    color: var(--color6);
+}
+
+a:hover {
+    color : var(--color5);
+}
+
+em {
+    font-style: italic;
+}
+
+li {
+    list-style-type: circle;
+}
+
+/* STEP id */
+
+#header__title--image {
+    width : 150px;
+    height: auto;
+    margin: var(--spacing);
+}
+
+#maintenance {
+    text-align: center;
+    color: var(--color2);
+    margin: var(--spacing);
+    padding: var(--spacing);
+}
+
+/* STEP class */
+
+.bg-main {
+
+    background-color: var(--color3);
+}
+
+.bg-sec {
+    background-color: var(--color4);
+}
+
+.text {
+    margin: var(--spacing);
+}
+
+.project__image {
+    width : 100%;
+    height: auto;
+}
+
+.line-throught {
+    text-decoration: line-through;
+}
+
+.a-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.error404 {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing);
+}
+
+.calbar-team {
+    width: 100%;
+    height: auto;
+}
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+
+.video-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* STEP Menu Burger */
+
+.nav {
+    background-color: var(--color4);
+    display: flex;
+    justify-content: center;
+}
+
+.nav__home, .nav__links, .nav__icon, .nav__links--item {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: var(--spacing);
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.nav__home:hover, .nav__links:hover, .nav__icon:hover, .nav__links--item:hover {
+    text-decoration: none;
+}
+
+.nav__links {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .nav__links {
+        display: none;
+    }
+}
+
+.nav__icon {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .nav__icon {
+        display: block;
+    }
+}
+
+.nav__icon.not-visible {
+    display: none;
+}
+
+.close-button {
+    display: none;
+}
+
+.close-button.visible {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: var(--spacing);
+    cursor: pointer;
+    color: var(--color6);
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+}

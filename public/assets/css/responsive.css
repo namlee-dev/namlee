@@ -1,0 +1,77 @@
+@media (max-width: 991px)
+{
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    /* Personalized message */
+
+    body:before 
+    {
+        content: "Version mobile du site";
+        display: block;
+        text-align: center;
+        font-style: italic;
+        color: #1d3557;
+    }
+
+    /* Spacing decrease */
+
+    :root {
+        --spacing : 0.5rem;
+    }
+
+    /* Fonts decreases */
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.75;
+        font-weight: bold;
+    }
+
+    /* Image decrease */
+
+    #header__title--image {
+        width : 50px;
+        height: auto;
+        margin: var(--spacing);
+    }
+
+    /* Break the too long lines */
+
+    body { 
+        word-wrap: break-word; 
+    }
+
+    /* For firefox and <pre> */
+
+    pre { 
+        white-space: pre-wrap; 
+    }
+
+}
+
+@media (max-width: 300px) {
+    .footer-rights {
+        height: 12vh;
+    }
+}
